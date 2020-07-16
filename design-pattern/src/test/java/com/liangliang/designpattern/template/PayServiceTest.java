@@ -11,11 +11,11 @@ import com.liangliang.designpattern.template.impl.WechatPayServiceImpl;
 public class PayServiceTest {
 
     public static void main(String[] args) {
-        PayService payService = new AliPayServiceImpl();
-        payService.pay();
-
-        PayService we = new WechatPayServiceImpl();
-        we.pay();
+        PayService aliPayService = new AliPayServiceImpl();
+        aliPayService.pay();
+        System.out.println("---------------------");
+        PayService wechatPayService = new WechatPayServiceImpl();
+        wechatPayService.pay();
     }
 
 }
